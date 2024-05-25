@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/static/css/nav.css">
+</head>
+<body>
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+<h1>Create Product</h1>
+    <form action="/create_product" method="post">
+        <label for="product_name">Product Name:</label><br>
+        <input type="text" id="product_name" name="product_name" required><br><br>
+        
+        <label for="price">Price:</label><br>
+        <input type="number" id="price" name="price" step="0.01" required><br><br>
+        
+        <label for="description">Description:</label><br>
+        <textarea id="description" name="description" rows="4" cols="50"></textarea><br><br>
+        
+        <label for="category">Category:</label><br>
+        <input type="text" id="category" name="category"><br><br>
+        
+        <label for="image_url">Image URL:</label><br>
+        <input type="url" id="image_url" name="image_url"><br><br>
+        
+        <input type="submit" value="Create Product">
+    </form>
+
+
+</body>
+</html>
